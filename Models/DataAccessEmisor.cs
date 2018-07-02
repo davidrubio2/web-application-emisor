@@ -31,12 +31,26 @@ namespace webappemisor.Models
             }
             return lstEmisor;
         }
-        public string AddEmisor()
+        public string AddEmisor(Emisor emisor)
         {
             string sRespuesta = "Ok";
             try
             {
+                using (MySqlConnection con = new MySqlConnection(sConnection))
+                {
 
+                    MySqlCommand cmd = new MySqlCommand(
+                    "INSERT INTO test_candidate.emisor(Id,Rfc,FechaInicioOperacion,Capital) VALUES(@Id,@Rfc,@FechaInicioOperacion,@Capital);", con);
+
+                    cmd.Parameters.AddWithValue("@Id", emisor.Id);
+                    cmd.Parameters.AddWithValue("@Rfc", emisor.Rfc);
+                    cmd.Parameters.AddWithValue("@FechaInicioOperacion", emisor.FechaInicioOperacion);
+                    cmd.Parameters.AddWithValue("@Capital", emisor.Capital);
+
+                    con.Open();
+                    cmd.ExecuteNonQuery();
+                    con.Close();
+                }
             }
             catch (Exception ex)
             {
