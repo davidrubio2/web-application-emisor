@@ -3,17 +3,18 @@
 
 <head>
   <meta charset="utf-8">
-
+  <script type="text/javascript" src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js'></script>
+  <script type="text/javascript" src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-route.js'></script>
   <link rel="stylesheet" type="text/css" href="Style.css">
 </head>
 
 <body id="Emisor" class="container">
   <div>
     <div id="navigation">
-      <a href="#/addemisor">Add emisor</a>
-      <a href="#/getallemisor">Get all emisor</a>
-      <a href="#/updateemisor">Update emisor</a>
-      <a href="#/deleteemisor">Delete emisor</a>
+      <a href="#/SaveEmisor">Guardar emisor</a>
+      <a href="#/GetEmisor">Obtener emisor</a>
+      <a href="#/UpdateEmisor">Modificar emisor</a>
+      <a href="#/DeleteEmisor">Eliminar emisor</a>
     </div>
     <div ng-view></div>
   </div>
