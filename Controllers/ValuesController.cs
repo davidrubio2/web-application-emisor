@@ -29,9 +29,9 @@ namespace webappemisor.Controllers
 
         // PUT api/values/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        public string Put(int id, Emisor emisor)
         {
-
+            return objEmisor.AlterEmisor(id,emisor);
         }
 
         // DELETE api/values/5

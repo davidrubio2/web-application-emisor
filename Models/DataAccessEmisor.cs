@@ -83,12 +83,26 @@ namespace webappemisor.Models
 
         }
 
-        public string AlterEmisor()
+        public string AlterEmisor(int Id, Emisor emisor)
         {
             string sRespuesta = "Ok";
             try
             {
+                using (MySqlConnection con = new MySqlConnection(sConnection))
+                {
 
+                    MySqlCommand cmd = new MySqlCommand(
+                    "UPDATE test_candidate.emisor SET  Rfc = @Rfc, FechaInicioOperacion = @FechaInicioOperacion, Capital = @Capital WHERE Id = @Id;", con);
+
+                    cmd.Parameters.AddWithValue("@Id", Id);
+                    cmd.Parameters.AddWithValue("@Rfc", emisor.Rfc);
+                    cmd.Parameters.AddWithValue("@FechaInicioOperacion", emisor.FechaInicioOperacion);
+                    cmd.Parameters.AddWithValue("@Capital", emisor.Capital);
+
+                    con.Open();
+                    cmd.ExecuteNonQuery();
+                    con.Close();
+                }
             }
             catch (Exception ex)
             {
