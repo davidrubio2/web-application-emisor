@@ -60,12 +60,19 @@ namespace webappemisor.Models
             return sRespuesta;
         }
 
-        public string DeleteEmisor()
+        public string DeleteEmisor(int Id)
         {
             string sRespuesta = "Ok";
             try
             {
-
+                using (MySqlConnection con = new MySqlConnection(sConnection))
+                {
+                    MySqlCommand cmd = new MySqlCommand("DELETE FROM test_candidate.emisor WHERE Id = @Id;", con);
+                    cmd.Parameters.AddWithValue("@Id", Id);
+                    con.Open();
+                    cmd.ExecuteNonQuery();
+                    con.Close();
+                }
             }
             catch (Exception ex)
             {

@@ -15,7 +15,7 @@ namespace webappemisor.Controllers
 
 
         [HttpGet]
-        public  ActionResult<List<Emisor>> GetAll()
+        public ActionResult<List<Emisor>> GetAll()
         {
             return objEmisor.GetAllEmisor().ToList();
 
@@ -36,8 +36,9 @@ namespace webappemisor.Controllers
 
         // DELETE api/values/5
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public string Delete(int id)
         {
+            return objEmisor.DeleteEmisor(id);
         }
     }
 }
