@@ -21,6 +21,13 @@ namespace webappemisor.Controllers
 
         }
 
+        [HttpGet]
+        public ActionResult<List<Emisor>> Get()
+        {
+            return objEmisor.GetAllEmisor().ToList();
+
+        }
+
         [HttpPost]
         public string Add(Emisor emisor)
         {

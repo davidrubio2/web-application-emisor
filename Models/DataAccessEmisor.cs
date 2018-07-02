@@ -31,6 +31,30 @@ namespace webappemisor.Models
             }
             return lstEmisor;
         }
+        public IEnumerable<Emisor> GetEmisor(int Id)
+        {
+            List<Emisor> lstEmisor = new List<Emisor>();
+            using (MySqlConnection con = new MySqlConnection(sConnection))
+            {
+                MySqlCommand cmd = new MySqlCommand("SELECT * FROM test_candidate.emisor where Id = @Id;", con);
+                cmd.Parameters.AddWithValue("@Id", Id);
+                
+                con.Open();
+                MySqlDataReader rdr = cmd.ExecuteReader();
+
+                while (rdr.Read())
+                {
+                    Emisor emisor = new Emisor();
+                    emisor.Rfc = Convert.ToString(rdr["Rfc"]);
+                    emisor.FechaInicioOperacion = Convert.ToDateTime(rdr["FechaInicioOperacion"]);
+                    emisor.Capital = Convert.ToDecimal(rdr["Capital"]);
+
+                    lstEmisor.Add(emisor);
+                }
+                con.Close();
+            }
+            return lstEmisor;
+        }
         public string AddEmisor(Emisor emisor)
         {
             string sRespuesta = "Ok";
