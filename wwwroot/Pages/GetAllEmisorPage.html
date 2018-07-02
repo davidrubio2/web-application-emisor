@@ -1,0 +1,27 @@
+<body>
+    <div class="container">
+
+        <div class="container">
+            <h1 align="center">Mostrar Emisores</h1>
+            <form name="inquiryForm" novalidate>
+            </form>
+            <ul class="list-group">
+                <li ng-repeat="emisor in emisor" class="list-group-item">
+
+                    <strong>ID: </strong>
+                    <span>{{ emisor.id }}</span>
+
+                    <strong>Rfc: </strong>
+                    <span>{{ emisor.Rfc }}</span>
+
+                    <strong>Fecha de inicio de operaciones: </strong>
+                    <span>{{ emisor.FechaInicioOperacion }}</span>
+
+                    <strong>Capital: </strong>
+                    <span>{{ emisor.Capital }}</span>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</body>
