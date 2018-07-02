@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using MySql.Data.MySqlClient;
 
 namespace webappemisor
 {
@@ -10,8 +11,24 @@ namespace webappemisor
         public IEnumerable<Emisor> GetAllEmisor()
         {
             List<Emisor> lstEmisor = new List<Emisor>();
-          
+            using (MySqlConnection con = new MySqlConnection(sConnection))
+            {
+                MySqlCommand cmd = new MySqlCommand("SELECT * FROM test_candidate.emisor;", con);
+                con.Open();
+                MySqlDataReader rdr = cmd.ExecuteReader();
 
+                while (rdr.Read())
+                {
+                    Emisor emisor = new Emisor();
+                    emisor.Id = Convert.ToString(rdr["Id"]);
+                    emisor.Rfc = Convert.ToString(rdr["Rfc"]);
+                    emisor.FechaInicioOperacion = Convert.ToDateTime(rdr["FechaInicioOperacion"]);
+                    emisor.Capital = Convert.ToDecimal(rdr["Capital"]);
+
+                    lstEmisor.Add(emisor);
+                }
+                con.Close();
+            }
             return lstEmisor;
         }
         public string AddEmisor()
