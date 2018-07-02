@@ -1,6 +1,6 @@
 using System;
 
-namespace webappemisor
+namespace webappemisor.Models
 {
     public class Emisor
     {

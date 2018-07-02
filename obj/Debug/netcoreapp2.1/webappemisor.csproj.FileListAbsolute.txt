@@ -12,3 +12,17 @@ C:\Users\X\Desktop\proyectos\pagina web emisor\obj\Debug\netcoreapp2.1\webappemi
 C:\Users\X\Desktop\proyectos\pagina web emisor\obj\Debug\netcoreapp2.1\webappemisor.RazorTargetAssemblyInfo.cache
 C:\Users\X\Desktop\proyectos\pagina web emisor\obj\Debug\netcoreapp2.1\webappemisor.dll
 C:\Users\X\Desktop\proyectos\pagina web emisor\obj\Debug\netcoreapp2.1\webappemisor.pdb
+C:\Users\ALIEN\Desktop\web app emisor\web-application-emisor\obj\Debug\netcoreapp2.1\webappemisor.csprojAssemblyReference.cache
+C:\Users\ALIEN\Desktop\web app emisor\web-application-emisor\obj\Debug\netcoreapp2.1\webappemisor.csproj.CoreCompileInputs.cache
+C:\Users\ALIEN\Desktop\web app emisor\web-application-emisor\obj\Debug\netcoreapp2.1\webappemisor.RazorAssemblyInfo.cache
+C:\Users\ALIEN\Desktop\web app emisor\web-application-emisor\obj\Debug\netcoreapp2.1\webappemisor.RazorAssemblyInfo.cs
+C:\Users\ALIEN\Desktop\web app emisor\web-application-emisor\obj\Debug\netcoreapp2.1\webappemisor.AssemblyInfoInputs.cache
+C:\Users\ALIEN\Desktop\web app emisor\web-application-emisor\obj\Debug\netcoreapp2.1\webappemisor.AssemblyInfo.cs
+C:\Users\ALIEN\Desktop\web app emisor\web-application-emisor\obj\Debug\netcoreapp2.1\webappemisor.dll
+C:\Users\ALIEN\Desktop\web app emisor\web-application-emisor\obj\Debug\netcoreapp2.1\webappemisor.pdb
+C:\Users\ALIEN\Desktop\web app emisor\web-application-emisor\bin\Debug\netcoreapp2.1\webappemisor.deps.json
+C:\Users\ALIEN\Desktop\web app emisor\web-application-emisor\bin\Debug\netcoreapp2.1\webappemisor.runtimeconfig.json
+C:\Users\ALIEN\Desktop\web app emisor\web-application-emisor\bin\Debug\netcoreapp2.1\webappemisor.runtimeconfig.dev.json
+C:\Users\ALIEN\Desktop\web app emisor\web-application-emisor\bin\Debug\netcoreapp2.1\webappemisor.dll
+C:\Users\ALIEN\Desktop\web app emisor\web-application-emisor\bin\Debug\netcoreapp2.1\webappemisor.pdb
+C:\Users\ALIEN\Desktop\web app emisor\web-application-emisor\obj\Debug\netcoreapp2.1\webappemisor.RazorTargetAssemblyInfo.cache
