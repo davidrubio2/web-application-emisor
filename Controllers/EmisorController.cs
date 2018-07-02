@@ -9,7 +9,7 @@ namespace webappemisor.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ValuesController : ControllerBase
+    public class EmisorController : ControllerBase
     {
         DataAccessEmisor objEmisor = new DataAccessEmisor();
 
@@ -21,27 +21,19 @@ namespace webappemisor.Controllers
 
         }
 
-        [HttpGet]
-        public ActionResult<List<Emisor>> Get()
-        {
-            return objEmisor.GetAllEmisor().ToList();
-
-        }
-
         [HttpPost]
         public string Add(Emisor emisor)
         {
             return objEmisor.AddEmisor(emisor);
         }
 
-        // PUT api/values/5
+
         [HttpPut("{id}")]
         public string Put(int id, Emisor emisor)
         {
             return objEmisor.AlterEmisor(id,emisor);
         }
 
-        // DELETE api/values/5
         [HttpDelete("{id}")]
         public string Delete(int id)
         {
