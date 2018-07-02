@@ -11506,23 +11506,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\X\\.nuget\\packages\\": {},
+    "C:\\Users\\ALIEN\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\X\\Desktop\\proyectos\\pagina web emisor\\webappemisor.csproj",
+      "projectUniqueName": "c:\\Users\\ALIEN\\Desktop\\web app emisor\\web-application-emisor\\webappemisor.csproj",
       "projectName": "webappemisor",
-      "projectPath": "c:\\Users\\X\\Desktop\\proyectos\\pagina web emisor\\webappemisor.csproj",
-      "packagesPath": "C:\\Users\\X\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\X\\Desktop\\proyectos\\pagina web emisor\\obj\\",
+      "projectPath": "c:\\Users\\ALIEN\\Desktop\\web app emisor\\web-application-emisor\\webappemisor.csproj",
+      "packagesPath": "C:\\Users\\ALIEN\\.nuget\\packages\\",
+      "outputPath": "c:\\Users\\ALIEN\\Desktop\\web app emisor\\web-application-emisor\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\X\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\ALIEN\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.1"
