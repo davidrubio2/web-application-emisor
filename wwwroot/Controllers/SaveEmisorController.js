@@ -5,14 +5,14 @@ SaveEmisor.controller("SaveEmisorController", ['$scope', 'SaveEmisorService', fu
                 var data = {
                         "Id": $scope.Id,
                         "Rfc": $scope.Rfc,
-                        "FechaInicioOperacion ": $scope.FechaInicioOperacion ,
+                        "FechaInicioOperacion": $scope.FechaInicioOperacion ,
                         "Capital": $scope.Capital
                 }
                 SaveEmisorService.putEmisor(data).then(function (response) {
                         $scope.SaveEmisorAppServices.push(response.data)
                 });
-			$scope.id = null;
-			$scope.rfc = null;
+			$scope.Id = null;
+			$scope.Rfc = null;
 			$scope.FechaInicioOperacion = null;
 			$scope.Capital = null;
         }
