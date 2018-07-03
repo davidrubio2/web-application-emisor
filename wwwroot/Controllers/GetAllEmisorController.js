@@ -3,7 +3,7 @@ GetEmisor.controller("GetAllEmisorController", ['$scope', 'GetEmisorService', fu
 
         $scope.GetEmisorAppServices = []
 
-        GetEmisorService.getEmisorFun().then(function (response) {
+        GetEmisorService.getEmisor().then(function (response) {
                 $scope.emisor = response.data;
         });
 }]);
